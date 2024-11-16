@@ -2,16 +2,15 @@
 
 //write your code here
 
-let pronoun = ["the", "our"];
-let adj = ["great", "big"];
-let noun = ["jogger", "racoon"];
+let pronouns = ["the", "our"];
+let adjectives = ["great", "big"];
+let nouns = ["jogger", "racoon"];
 
-for (let SelectPronoun = 0; SelectPronoun < pronoun.length; SelectPronoun++) {
-  for (let SelectAdj = 0; SelectAdj < adj.length; SelectAdj++) {
-    for (let SelectNoun = 0; SelectNoun < noun.length; SelectNoun++) {
-      console.log(
-        pronoun[SelectPronoun] + adj[SelectAdj] + noun[SelectNoun] + ".com"
+for (let pronoun of pronouns) {
+  for (let adj of adjectives) {
+    for (let noun of nouns) {
+      console.log([pronoun + adj + noun] +".com"
       );
     }
   }
-}
+};
